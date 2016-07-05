@@ -9,3 +9,17 @@
 #
 # > 120
 #
+def factorial(n)
+  product = []
+  while n >= 1
+    product.push(n)
+    n -= 1
+  end
+  puts product
+  fact = product.inject do |a, b|
+    a * b
+  end
+  puts fact
+end
+
+factorial(4)
