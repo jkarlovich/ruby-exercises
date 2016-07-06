@@ -22,4 +22,19 @@ def factorial(n)
   puts fact
 end
 
+############################
+def factorial(n)
+    (1..n).reduce(:*)
+end
+puts factorial(4)
+
+#####################
+
+def factorial(n)
+  if n == 0
+    return 1
+  else
+    return n * factorial(n-1)
+
+#########################
 factorial(4)
